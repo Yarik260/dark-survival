@@ -254,5 +254,22 @@ window.onmouseup = () => mouse.down = false;
 
 setLang('ru'); loop();
 </script>
+(function() {
+    const authorizedDomain = "yarik260.github.io";
+    const currentDomain = window.location.hostname;
+    const author = "yarikLOL";
+
+    if (currentDomain !== authorizedDomain && currentDomain !== "localhost" && currentDomain !== "127.0.0.1") {
+        document.body.innerHTML = `
+            <div style="background:#000; color:#ff4444; height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; font-family:sans-serif; text-align:center;">
+                <h1>⚠️ ОШИБКА ДОСТУПА</h1>
+                <p>Эта копия игры является нелегальной.</p>
+                <p>Оригинал тут: <a href="https://${authorizedDomain}/dark-survival/" style="color:white;">Перейти к автору</a></p>
+            </div>`;
+        throw new Error("Piracy detected!");
+    }
+    console.log("DARK SURVIVAL © " + author);
+})()
 </body>
+
 </html>
