@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>DARK SURVIVAL | Official Site</title>
+    <style>
+        body {
+            margin: 0;
+            background: #050505;
+            color: #eee;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: radial-gradient(circle, #111 0%, #050505 100%);
+        }
+        h1 { font-size: 3.5em; letter-spacing: 10px; margin: 0; }
+        .dev-tag { color: #3498db; font-weight: bold; margin-bottom: 20px; display: block; }
+        
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        
+        .play-card {
+            background: #111;
+            border: 1px solid #222;
+            padding: 40px;
+            text-align: center;
+            border-radius: 12px;
+            margin-top: -100px;
+        }
+        .btn {
+            background: #3498db;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: 0.3s;
+            display: inline-block;
+        }
+        .btn:hover { background: #2980b9; transform: scale(1.05); }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 60px;
+        }
+        .info-card { background: #0a0a0a; padding: 20px; border-radius: 8px; border: 1px solid #151515; }
+        h3 { color: #3498db; }
+        footer { text-align: center; padding: 40px; color: #444; border-top: 1px solid #111; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <span class="dev-tag">BY yarikLOL</span>
+        <h1>DARK SURVIVAL</h1>
+    </header>
+
+    <div class="container">
+        <div class="play-card">
+            <p>Испытай свои навыки в минималистичном шутере с элементами выживания.</p>
+            <a href="game.html" class="btn">ЗАПУСТИТЬ ИГРУ</a>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>О проекте</h3>
+                <p>Это экспериментальный проект, созданный с фокусом на минимализм и плавность геймплея. В игре реализована система лазерного наведения и процедурная генерация арен.</p>
+            </div>
+            <div class="info-card">
+                <h3>Технологии</h3>
+                <p>Чистый JavaScript, HTML5 Canvas и полное отсутствие тяжелых библиотек для максимальной производительности.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Developed by yarikLOL(xzxg40@gmail.com)
+    </footer>
+
+</body>
+</html>
